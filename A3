@@ -1,0 +1,8 @@
+<script>
+var timetable = new Timetable();
+timetable.setScope(18, 4); // optional, only whole hours between 0 and 23
+timetable.addLocations(['⚡ Bibelot', '⚡ Bibelot Power Stage', '⚡ Popcentrale Talentstage', '⚡ Popcentrale Balcony', '⚡ Popcentrale Jan Dekker plein', '⚡ ToBe 1ste Etage', ' Dordts Museum vleugel', ' Dordts Museum ', ' Dordts Museum Collectie', ' Dordts Museum O', ' Dordts Museum Tuin', ' Dordts Museum Art & Dining', ' Hof van NL ', ' Hof van NL Rondleiding', ' Bibliotheek DordtLAB', ' Bibliotheek Blauwe Kamer', ' Bibliotheek Cafe Americain', ' Bibliotheek Buiten', ' Bibliotheek Jongerenvloer', ' Onderwijsmuseum ', ' Onderwijsmuseum (-1)', ' Onderwijsmuseum (1ste)', '⚡ Energiehuis ']);
+var options = { url: 'https://cultuurnacht.webflow.io/', class: 'normal', onClick: function(event, timetable, clickEvent) {} }; timetable.addEvent('18:00 D SOUND', '⚡ Bibelot', new Date(2015,8,8,18,00), new Date(2015,8,8,18,50), options);
+var renderer = new Timetable.Renderer(timetable);
+renderer.draw('.timetable'); // any css selector
+</script>
