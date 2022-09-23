@@ -6,3 +6,5 @@ timetable.addLocations(['Bibelot', 'Bibelot Power Stage', 'Bibelot Brandstof', '
 var renderer = new Timetable.Renderer(timetable);
 renderer.draw('.timetable'); // any css selector
 </script>
+
+Balkon Serenades | Luuk Geers
