@@ -1,9 +1,0 @@
-<script>
-var timetable = new Timetable();
-timetable.setScope(18, 4); // optional, only whole hours between 0 and 23
-timetable.addLocations(['⚡ Energiehuis', '⚡ Bibelot Rookhok Rave', '⚡ Bibelot Power Stage', '⚡ Popcentrale Talentstage', '⚡ Popcentrale Balcony', '⚡ Popcentrale Jan Dekker plein', '⚡ ToBe 1ste Etage', 'Kunstmin', 'Kunstmin Kleine Zaal', '⚡ Kunstmin K1', '⚡ Kunstmin Stoom 1', 'Dordts Museum Vleugel', 'Dordts Museum', 'Dordts Museum Collectie', 'Dordts Museum Extra', 'Dordts Museum Tuin', 'Dordts Museum Art & Dining', 'The Movies', 'Kunstkerk', 'Hof van NL', 'Hof van NL Rondleiding', 'DOOR', 'Bibliotheek', 'Bibliotheek Cafe Americain', 'Bibliotheek Buiten', 'Bibliotheek Jongerenvloer', 'Onderwijsmuseum']);
-
-
-var renderer = new Timetable.Renderer(timetable);
-renderer.draw('.timetable'); // any css selector
-</script>
