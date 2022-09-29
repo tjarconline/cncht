@@ -1,0 +1,20 @@
+<script>
+var timetable = new Timetable();
+timetable.setScope(18, 4); // optional, only whole hours between 0 and 23
+timetable.addLocations(['Ontdek Dordrecht', 'The Movies', 'Dordts Museum', '⚡ Kunstmin Ketel 1', '⚡ Kunstmin Stoom 1', '⚡ Bibelot Power Stage', ]);
+var options = { class: 'young', onClick: function(event, timetable, clickEvent) {} }; timetable.addEvent('💬 19:00 STADSWANDELING', 'Ontdek Dordrecht', new Date(2015,8,8,19,00), new Date(2015,8,8,19,45), options);
+var options = { class: 'young', onClick: function(event, timetable, clickEvent) {} }; timetable.addEvent('📺 20:00 NIGHT SHORTS', 'The Movies', new Date(2015,8,8,20,00), new Date(2015,8,8,20,40), options);
+var options = { class: 'young', onClick: function(event, timetable, clickEvent) {} }; timetable.addEvent('🎨 21:10 FILOSOFISCHE RONDLEIDING', 'Dordts Museum', new Date(2015,8,8,21,10), new Date(2015,8,8,21,50), options);
+var options = { class: 'young', onClick: function(event, timetable, clickEvent) {} }; timetable.addEvent('📺 22:00 UNIVERSAL TONGUE', '⚡ Kunstmin Ketel 1', new Date(2015,8,8,22,00), new Date(2015,8,8,22,30), options);
+var options = { class: 'young', onClick: function(event, timetable, clickEvent) {} }; timetable.addEvent('💬 22:30 CLOUD ODYSSEE', '⚡ Kunstmin Stoom 1', new Date(2015,8,8,22,30), new Date(2015,8,8,23,00), options);
+var options = { class: 'young', onClick: function(event, timetable, clickEvent) {} }; timetable.addEvent('🎵 23:00 FERDOUS', '⚡ Bibelot Power Stage', new Date(2015,8,8,23,00), new Date(2015,8,8,23,40), options);
+
+
+
+
+
+
+
+var renderer = new Timetable.Renderer(timetable);
+renderer.draw('.timetable'); // any css selector
+</script>
