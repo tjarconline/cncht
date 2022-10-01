@@ -1,0 +1,20 @@
+<script>
+var timetable = new Timetable();
+timetable.setScope(18, 4); // optional, only whole hours between 0 and 23
+timetable.addLocations(['Onderwijsmuseum', 'Zwarte Lola', 'The Movies Terras', 'Kunstmin Kleine Zaal', '⚡ Popcentrale Talentstage', '⚡ Bibelot Power Stage', '⚡ Bibelot Bezemkast', ]);
+var options = { class: 'tijger', onClick: function(event, timetable, clickEvent) {} }; timetable.addEvent('🎵 20:00 COFFIN DODGERS', 'Onderwijsmuseum', new Date(2015,8,8,20,00), new Date(2015,8,8,20,40), options);
+var options = { class: 'tijger', onClick: function(event, timetable, clickEvent) {} }; timetable.addEvent('🎵 20:45 PARADE', 'Zwarte Lola', new Date(2015,8,8,20,45), new Date(2015,8,8,23,00), options);
+var options = { class: 'tijger', onClick: function(event, timetable, clickEvent) {} }; timetable.addEvent('🎵 21:10 ICONIC BRASS BAND', 'The Movies Terras', new Date(2015,8,8,21,10), new Date(2015,8,8,21,50), options);
+var options = { class: 'tijger', onClick: function(event, timetable, clickEvent) {} }; timetable.addEvent('💃🏽 22:15 XCCC', 'Kunstmin Kleine Zaal', new Date(2015,8,8,22,15), new Date(2015,8,8,22,35), options);
+var options = { class: 'tijger', onClick: function(event, timetable, clickEvent) {} }; timetable.addEvent('🎵 23:10 BACH VS. ANALOG KITCHEN', '⚡ Popcentrale Talentstage', new Date(2015,8,8,23,10), new Date(2015,8,8,23,50), options);
+var options = { class: 'tijger', onClick: function(event, timetable, clickEvent) {} }; timetable.addEvent('🎵 00:10 DE NACHTWAKERS', '⚡ Bibelot Power Stage', new Date(2015,8,9,00,10), new Date(2015,8,9,00,50), options);
+var options = { class: 'tijger', onClick: function(event, timetable, clickEvent) {} }; timetable.addEvent('🎵 00:30 KAHORSA', '⚡ Bibelot Bezemkast', new Date(2015,8,9,00,30), new Date(2015,8,9,01,30), options);
+
+
+
+
+
+
+var renderer = new Timetable.Renderer(timetable);
+renderer.draw('.timetable'); // any css selector
+</script>
