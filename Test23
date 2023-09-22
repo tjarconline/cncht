@@ -1,0 +1,9 @@
+<script>
+var timetable = new Timetable();
+timetable.setScope(18, 4); // optional, only whole hours between 0 and 23
+timetable.addLocations(['⚡ Energiehuis', '⚡ Bibelot Power Stage', '⚡ Bibelot Bezemkast', '⚡ Bibelot Brandstof', '⚡ Popcentrale Talentstage', '⚡ Popcentrale Balcony', '⚡ Popcentrale Jan Dekker plein', '⚡ ToBe 1ste Etage', '⚡ Kunstmin Ketel 1', '⚡ Kunstmin Stoom 1', 'Kunstmin', 'Kunstmin Kleine Zaal', 'Dordts Museum', 'Dordts Museum Tentoonstellingen', 'Dordts Museum Collectie', 'Dordts Museum Extra', 'Dordts Museum Art & Dining', 'Dordts Museum Tuin', 'The Movies', 'The Movies Terras', 'Kunstkerk', 'Hof van NL', 'Hof van NL Rondleiding', 'DOOR', 'DOOR Podiumwerkplaats', 'Bibliotheek Blauwe Kamer', 'Bibliotheek DordtLab', 'Bibliotheek Jongerenvloer', 'Bibliotheek Cafe Americain', 'Bibliotheek Buiten', 'Onderwijsmuseum', 'Onderwijsmuseum (1ste)', 'Onderwijsmuseum (-1)', 'Muziekpodium DJS', 'Grote Kerk', 'Tinimini Room', 'DS17', 'Ontdek Dordrecht', 'Theater Tortillia', 'Weeshuistheater', 'Via Cultura', 'Zwarte Lola', 'Iconoclash', ]);
+
+
+var renderer = new Timetable.Renderer(timetable);
+renderer.draw('.timetable'); // any css selector
+</script>
