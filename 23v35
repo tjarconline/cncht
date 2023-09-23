@@ -1,0 +1,13 @@
+<script>
+var timetable = new Timetable();
+timetable.setScope(18, 4); // optional, only whole hours between 0 and 23
+timetable.addLocations(['⚡ Energiehuis' ,'⚡ Bibelot Main Stage' ,'⚡ Bibelot Power Stage' ,'⚡ Bibelot Bezemkast' ,'⚡ Bibelot Brandstof' ,'⚡ Bibelot Terras' ,'⚡ Popcentrale' ,'⚡ ToBe' ,'⚡ ToBe 1e etage' ,'⚡ Kunstmin Ketel 1' ,'Kunstmin Kleine Zaal' ,'Kunstmin Terras' ,'Dordts Museum Hoge zalen' ,'Dordts Museum Lage zalen' ,'Dordts Museum Schoumanzaal' ,'Dordts Museum Art & Dining' ,'Dordts Museum Wijnbar' ,'Dordts Museum Tuin' ,'Dordts Museum Caravan' ,'Kunstkerk' ,'Kunstkerk Café' ,'De Witt Filmlounge' ,'De Witt Terras' ,'Hof van NL' ,'Hof van NL Statenzaal' ,'Hof van NL Vrijplaats' ,'Hof van NL Vrijheid' ,'Hof van NL Zolder' ,'Hof van NL Plein' ,'Ontdek Dordrecht' ,'Pictura' ,'DOOR Podium' ,'DOOR Atrium' ,'DOOR Trappenhuis' ,'DOOR Buiten' ,'Bibliotheek Blauwe kamer' ,'Bibliotheek Maakplaats' ,'Bibliotheek Ontwikkelplein' ,'Bibliotheek Jongerenvloer' ,'Bibliotheek Kinderhoek' ,'Bibliotheek Café Americain' ,'Bibliotheek Buitenplaats' ,'Bibliotheek Plein' ,'Onderwijsmuseum BG' ,'Onderwijsmuseum Edu' ,'Onderwijsmuseum Café' ,'Onderwijsmuseum -1' ,'Onderwijsmuseum Buiten' ,'Muziekpodium DJS' ,'Rebel Rebel' ,'Grote Kerk' ,'Huis van Gijn Zaal' ,'Huis van Gijn Speelgoedzolder' ,'Huis van Gijn Keuken' ,'Huis van Gijn Velouteslaapkamer' ,'Huis van Gijn Prentenkamer' ,'Huis van Gijn Museumcafe' ,'Dordts Patriciërshuis' ,'Weeshuistheater',])
+
+var options = { url: 'https://www.dordtsecultuurnacht.nl/loc/huis-van-gijn#:~:text=Ga%20op%20de%20foto%20als%20in%20een%2019de%20eeuws%20tableau%20vivant', class: 'normal', onClick: function(event, timetable, clickEvent) {} }; timetable.addEvent('✂ 19:00 TABLEAU VIVANT', 'Huis Van Gijn Zaal', new Date(2015,8,14,19,00), new Date(2015,8,14,23,00), options);
+var options = { url: 'https://www.dordtsecultuurnacht.nl/loc/huis-van-gijn#:~:text=Ga%20op%20de%20foto%20als%20jouw%20historische%20fantasiefiguur%21', class: 'normal', onClick: function(event, timetable, clickEvent) {} }; timetable.addEvent('🐑 18:00 KINDERVERKLEEDKIST', 'Huis Van Gijn Speelgoedzolder', new Date(2015,8,14,18,00), new Date(2015,8,14,21,00), options);
+var options = { url: 'https://www.dordtsecultuurnacht.nl/loc/huis-van-gijn#:~:text=Speedtalk%3A%20De%20Dienstbode', class: 'normal', onClick: function(event, timetable, clickEvent) {} }; timetable.addEvent('👣 18:30 DIENSTBODE', 'Huis Van Gijn Keuken', new Date(2015,8,14,18,30), new Date(2015,8,14,18,40), options);
+
+
+var renderer = new Timetable.Renderer(timetable);
+renderer.draw('.timetable'); // any css selector
+</script>
